@@ -1,0 +1,267 @@
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#edf7f0,#f8fbf8);font-family:Inter,Arial,sans-serif;color:#17211d;min-height:100vh;display:grid;place-items:center;padding:24px}.auth-wrap{width:min(460px,100%)}.brand{display:block;text-align:center;font-size:27px;font-weight:800;margin-bottom:20px;color:#111;text-decoration:none}.brand-mark{color:#08763e}.auth-card{background:#fff;border:1px solid #e0ebe3;border-radius:16px;padding:30px;box-shadow:0 18px 55px #174a2910}.auth-card h1{font-size:27px;line-height:1.2;margin:0 0 8px;letter-spacing:-.6px}.intro{color:#68766d;font-size:13px;margin:0 0 22px}.field{margin:14px 0}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}.field input{width:100%;border:1px solid #d8e3dc;border-radius:7px;padding:12px;font:inherit;font-size:14px;outline:none}.field input:focus{border-color:#08763e;box-shadow:0 0 0 3px #08763e15}.submit{width:100%;border:0;background:#08763e;color:#fff;border-radius:7px;padding:13px;font-weight:700;cursor:pointer;margin-top:8px}.submit:hover{background:#075d35}.message{border-radius:7px;padding:11px 12px;font-size:12px;margin-bottom:15px}.error{background:#fff0ef;color:#a72d25;border:1px solid #f2cfcb}.success{background:#eef9f0;color:#176b37;border:1px solid #cde8d3}.foot{text-align:center;font-size:12px;color:#68766d;margin:18px 0}.foot a,.back{color:#08763e;font-weight:700;text-decoration:none}.back{display:block;text-align:center;font-size:12px;margin-top:15px}.hint{font-size:11px;color:#718078;line-height:1.5;margin-top:6px}
+
+/* =================================
+   GENERAL
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #edf7f0, #f8fbf8);
+    font-family: 'Inter', Arial, sans-serif;
+    color: #17211d;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 30px 20px;
+}
+
+/* =================================
+   MAIN CONTAINER
+================================= */
+
+.auth-wrap {
+    width: min(460px, 100%);
+}
+
+/* =================================
+   BRAND
+================================= */
+
+.brand {
+    display: block;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #111;
+    text-decoration: none;
+}
+
+.brand-mark {
+    color: #08763e;
+}
+
+/* =================================
+   REGISTRATION CARD
+================================= */
+
+.auth-card {
+    background: #ffffff;
+    border: 1px solid #e0ebe3;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 18px 55px rgba(23, 74, 41, 0.08);
+}
+
+.auth-card h1 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    letter-spacing: -0.6px;
+    color: #17211d;
+}
+
+.intro {
+    color: #68766d;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 22px;
+}
+
+/* =================================
+   FORM FIELDS
+================================= */
+
+.field {
+    margin: 16px 0;
+}
+
+.field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #26372d;
+}
+
+.field input,
+.field select {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    border: 1px solid #d8e3dc;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: #ffffff;
+    color: #26372d;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Input Focus */
+
+.field input:focus,
+.field select:focus {
+    border-color: #08763e;
+    box-shadow: 0 0 0 3px rgba(8, 118, 62, 0.10);
+}
+
+/* Dropdown */
+
+.field select {
+    cursor: pointer;
+    appearance: auto;
+}
+
+.field select:invalid {
+    color: #89948d;
+}
+
+.field select option {
+    color: #26372d;
+    background: #ffffff;
+}
+
+/* =================================
+   HINT TEXT
+================================= */
+
+.hint {
+    font-size: 11px;
+    color: #718078;
+    line-height: 1.6;
+    margin-top: 7px;
+}
+
+/* =================================
+   TERMS AND CONDITIONS
+================================= */
+
+.terms-field {
+    margin: 20px 0;
+}
+
+.terms-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #526158;
+    cursor: pointer;
+}
+
+.terms-label input {
+    width: 16px;
+    height: 16px;
+    margin: 2px 0 0;
+    accent-color: #08763e;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+/* =================================
+   SUBMIT BUTTON
+================================= */
+
+.submit {
+    width: 100%;
+    border: 0;
+    background: #08763e;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 14px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.submit:hover {
+    background: #075d35;
+    transform: translateY(-1px);
+}
+
+.submit:active {
+    transform: translateY(0);
+}
+
+/* =================================
+   ERROR MESSAGE
+================================= */
+
+.message {
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.error {
+    background: #fff0ef;
+    color: #a72d25;
+    border: 1px solid #f2cfcb;
+}
+
+/* =================================
+   FOOTER LINKS
+================================= */
+
+.foot {
+    text-align: center;
+    font-size: 12px;
+    color: #68766d;
+    margin: 20px 0 0;
+}
+
+.foot a,
+.back {
+    color: #08763e;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.foot a:hover,
+.back:hover {
+    text-decoration: underline;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px 14px;
+    }
+
+    .auth-card {
+        padding: 23px 20px;
+    }
+
+    .auth-card h1 {
+        font-size: 24px;
+    }
+
+    .brand {
+        font-size: 24px;
+    }
+
+}
